@@ -1,0 +1,142 @@
+/* تنسيق الأساسيات */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: #050505; /* أسود أعمق لفخامة النيون */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* حاوية الفورم الزجاجية */
+form {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 40px;
+    border-radius: 40px;
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(0, 210, 255, 0.05);
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.shinobi-title {
+    color: white;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 0 40px #00d2ff;
+    letter-spacing: 2px;
+}
+
+/* تنسيق العناوين والمداخل */
+label {
+    display: block;
+    color: #00d2ff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 8px;
+}
+
+input, input[type="tel"], input[type="email"], input[type="password"] {
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    border: 2px solid #00d2ff;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 20px #00d2ff;
+    border-color: #fff;
+}
+
+/* زخرفة قسم الجنس */
+.gender-section {
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.gender-title {
+    margin-bottom: 15px;
+}
+
+.radio-container {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-card {
+    flex: 1;
+    cursor: pointer;
+}
+
+.radio-card input {
+    display: none;
+}
+
+.custom-radio {
+    display: block;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #00d2ff;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.radio-card input:checked + .custom-radio {
+    background: #00d2ff;
+    color: #000;
+    box-shadow: 0 0 25px #00d2ff;
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+/* زرار الدخول */
+button {
+    width: 100%;
+    padding: 20px;
+    background: #00d2ff;
+    color: #000;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.4s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: #fff;
+    box-shadow: 0 0 40px #fff;
+    transform: translateY(-5px);
+}
+
+::placeholder {
+    font-size: 16px;
+    text-align: right;
+    opacity: 0.3;
+}

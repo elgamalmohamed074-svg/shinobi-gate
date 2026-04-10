@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة الشينوبي - الإصدار الأسطوري</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <form action="https://google.com">
+        <h1 class="shinobi-title">بوابة الشينوبي</h1>
+
+        <div class="input-group">
+            <label>USER NAME</label>
+            <input type="text" placeholder="اسم المستخدم" name="user" maxlength="15" required>
+        </div>
+
+        <div class="input-group">
+            <label>PHONE NUMBER</label>
+            <input type="tel" placeholder="رقم الهاتف" name="number" maxlength="18" required>
+        </div>
+
+        <div class="input-group">
+            <label>GMAIL</label>
+            <input type="email" placeholder="example@gmail.com" name="email" required>
+        </div>
+
+        <div class="input-group">
+            <label>PASSWORD</label>
+            <input type="password" placeholder="كلمة المرور" name="charset" required>
+        </div>
+
+        <!-- قسم الجنس المطور -->
+        <div class="gender-section">
+            <label class="gender-title">ما جنسك؟</label>
+            <div class="radio-container">
+                <label class="radio-card">
+                    <input type="radio" name="CHOICES" value="male" required>
+                    <span class="custom-radio">ذكر</span>
+                </label>
+                <label class="radio-card">
+                    <input type="radio" name="CHOICES" value="female" required>
+                    <span class="custom-radio">أنثى</span>
+                </label>
+            </div>
+        </div>
+
+        <button type="submit">دخول القرية</button>
+    </form>
+
+</body>
+</html>
